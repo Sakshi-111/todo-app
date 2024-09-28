@@ -16,6 +16,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px; /* Add some space between header and content */
+  color:coral
 }
 
 /* Input Container Styles */
