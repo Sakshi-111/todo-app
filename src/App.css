@@ -1,64 +1,98 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #457B9D;
+  background-color: #457B9D; /* Dark blue background */
+  color: #fff; /* White text color */
 }
 
-h1{
+h1 {
   text-align: center;
+  margin-bottom: 20px; /* Add some space between header and content */
 }
 
+/* Input Container Styles */
 
-.input-container{
+.input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px; /* Add some padding to the container */
+  background-color: #fff; /* White background for input container */
+  border-radius: 10px; /* Add a subtle border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
-
-.input-container > input{
+.input-container > input {
   width: 300px;
   height: 30px;
   font-size: 1.25rem;
+  padding: 10px; /* Add some padding to the input field */
+  border: none;
+  border-radius: 10px; /* Add a subtle border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  color: black;
 }
 
-
-.input-container > button{
-   width: 40px;
-   height: 40px;
-   border-radius: 20px;
-   font: 1.5rem;
-   background-color:#E63946 ;
-   margin-top : 10px
+.input-container > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px; /* Make the button more rounded */
+  font-size: 1.5rem;
+  background-color: #E63946; /* Red button color */
+  color: #fff; /* White button text color */
+  border: none;
+  cursor: pointer; /* Change cursor to a pointing hand on hover */
+  transition: background-color 0.2s ease; /* Add a smooth transition effect */
 }
 
+.input-container > button:hover {
+  background-color: #c53030; /* Darken the button color on hover */
+}
 
-.container{
-  margin-top: 15px;
+/* Todo List Styles */
+
+.container {
+  margin-top: 30px; /* Add some space between input container and todo list */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap : 5px
+  gap: 10px; /* Increase the gap between todo items */
+  color:#457B9D;
 }
 
-.todo{
+.todo {
   width: 500px;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  background-color:#F1FAEE ;
-  padding: 0px 5px;
-
+  border-radius: 10px; /* Add a subtle border radius */
+  background-color: #F1FAEE; /* Light green background for todo items */
+  padding: 10px; /* Add some padding to the todo item */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
 .actions > button {
-  background-color:#E63946 ;
-  color : white;
+  background-color: #E63946; /* Red button color */
+  color: #fff; /* White button text color */
   height: 30px;
   width: 75px;
-  border-radius: 10px;
+  border-radius: 10px; /* Add a subtle border radius */
   font-size: 1.05rem;
-  margin-left : 10px
+  margin-left: 10px;
+  border: none;
+  cursor: pointer; /* Change cursor to a pointing hand on hover */
+  transition: background-color 0.2s ease; /* Add a smooth transition effect */
+}
+
+.actions > button:hover {
+  background-color: #c53030; /* Darken the button color on hover */
 }
